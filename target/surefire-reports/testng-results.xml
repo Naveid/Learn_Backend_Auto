@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Sample Suite" duration-ms="21" started-at="2018-05-30T06:02:47Z" finished-at="2018-05-30T06:02:47Z">
+    <groups>
+      <group name="calc">
+        <method signature="testCalculator.diffTest()[pri:0, instance:testCalculator@3b6eb2ec]" name="diffTest" class="testCalculator"/>
+        <method signature="testCalculator.divTest()[pri:0, instance:testCalculator@3b6eb2ec]" name="divTest" class="testCalculator"/>
+        <method signature="testCalculator.modTest()[pri:0, instance:testCalculator@3b6eb2ec]" name="modTest" class="testCalculator"/>
+        <method signature="testCalculator.mulTest()[pri:0, instance:testCalculator@3b6eb2ec]" name="mulTest" class="testCalculator"/>
+        <method signature="testCalculator.sumTest()[pri:0, instance:testCalculator@3b6eb2ec]" name="sumTest" class="testCalculator"/>
+      </group> <!-- calc -->
+    </groups>
+    <test name="testing" duration-ms="21" started-at="2018-05-30T06:02:47Z" finished-at="2018-05-30T06:02:47Z">
+      <class name="testCalculator">
+        <test-method status="PASS" signature="diffTest()[pri:0, instance:testCalculator@3b6eb2ec]" name="diffTest" duration-ms="7" started-at="2018-05-30T11:32:47Z" finished-at="2018-05-30T11:32:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- diffTest -->
+        <test-method status="PASS" signature="divTest()[pri:0, instance:testCalculator@3b6eb2ec]" name="divTest" duration-ms="0" started-at="2018-05-30T11:32:47Z" finished-at="2018-05-30T11:32:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divTest -->
+        <test-method status="PASS" signature="modTest()[pri:0, instance:testCalculator@3b6eb2ec]" name="modTest" duration-ms="0" started-at="2018-05-30T11:32:47Z" finished-at="2018-05-30T11:32:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modTest -->
+        <test-method status="PASS" signature="mulTest()[pri:0, instance:testCalculator@3b6eb2ec]" name="mulTest" duration-ms="0" started-at="2018-05-30T11:32:47Z" finished-at="2018-05-30T11:32:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mulTest -->
+        <test-method status="PASS" signature="sumTest()[pri:0, instance:testCalculator@3b6eb2ec]" name="sumTest" duration-ms="1" started-at="2018-05-30T11:32:47Z" finished-at="2018-05-30T11:32:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumTest -->
+      </class> <!-- testCalculator -->
+    </test> <!-- testing -->
+  </suite> <!-- Sample Suite -->
+</testng-results>
