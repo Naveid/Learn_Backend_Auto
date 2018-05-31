@@ -24,12 +24,9 @@ public class testCalculator {
     }
     @Test(groups = {"calc"})
     public void modTest(){
-        Assert.assertEquals(1,cal.mod(11,5),"failed");
+        Assert.assertEquals(1,cal.mod(11,5),"faled");
     }
-    @Test(groups = {"calc"})
-    public void abcTest(){
-        Assert.assertEquals(1,cal.mod(11,5),"failed");
-    }
+
 
 
 
