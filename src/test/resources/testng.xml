@@ -3,7 +3,9 @@
     <test name="testing">
         <groups>
             <run>
-                <!--<include name="nav"/>-->
+                <include name="pos"/>
+                <include name="all"/>
+                <include name="neg"/>
             </run>
         </groups>
         <classes>
