@@ -58,7 +58,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Sample_Suite">
-                    <span>1 group</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,27 +101,7 @@
                     <div class="method-list-content passed suite-Sample_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Suite" title="testCalculator" hash-for-method="diffTest">diffTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Suite" title="testCalculator" hash-for-method="divTest">divTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Suite" title="testCalculator" hash-for-method="modTest">modTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Sample_Suite" title="testCalculator" hash-for-method="mulTest">mulTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Suite" title="testCalculator" hash-for-method="sumTest">sumTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Sample_Suite -->
@@ -144,37 +124,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="diffTest">
-                  </a> <!-- diffTest -->
-                  <span class="method-name">diffTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="divTest">
-                  </a> <!-- divTest -->
-                  <span class="method-name">divTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="modTest">
-                  </a> <!-- modTest -->
-                  <span class="method-name">modTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="mulTest">
                   </a> <!-- mulTest -->
                   <span class="method-name">mulTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="sumTest">
-                  </a> <!-- sumTest -->
-                  <span class="method-name">sumTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -192,7 +144,7 @@
   &lt;test name=&quot;testing&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;calc&quot;/&gt;
+        &lt;include name=&quot;nav&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -224,23 +176,15 @@
               <span class="test-group-name">calc</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">diffTest</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">divTest</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">modTest</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
                 <span class="method-in-group-name">mulTest</span>
                 <br/>
               </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">nav</span>
+              <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">sumTest</span>
+                <span class="method-in-group-name">mulTest</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -260,27 +204,11 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'diffTest')
+data.setCell(0, 1, 'mulTest')
 data.setCell(0, 2, 'testCalculator')
-data.setCell(0, 3, 7);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'sumTest')
-data.setCell(1, 2, 'testCalculator')
-data.setCell(1, 3, 1);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'divTest')
-data.setCell(2, 2, 'testCalculator')
-data.setCell(2, 3, 0);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'modTest')
-data.setCell(3, 2, 'testCalculator')
-data.setCell(3, 3, 0);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'mulTest')
-data.setCell(4, 2, 'testCalculator')
-data.setCell(4, 3, 0);
+data.setCell(0, 3, 8);
 window.suiteTableData['Sample_Suite']= { tableData: data, tableDiv: 'times-div-Sample_Suite'}
 return data;
 }
@@ -300,9 +228,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Sample_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCalculator</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">sumTest</span>
+                <br/>
+                <span class="ignored-method-name">diffTest</span>
+                <br/>
+                <span class="ignored-method-name">divTest</span>
+                <br/>
+                <span class="ignored-method-name">modTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Sample_Suite" class="panel">
@@ -313,24 +254,8 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testCalculator</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">diffTest</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">divTest</span>
-                <span class="method-start">9 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">modTest</span>
-                <span class="method-start">9 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">mulTest</span>
-                <span class="method-start">10 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">sumTest</span>
-                <span class="method-start">10 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

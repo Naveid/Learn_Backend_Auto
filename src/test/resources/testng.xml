@@ -3,11 +3,19 @@
     <test name="testing">
         <groups>
             <run>
-                <include name="calc"/>
+                <!--<include name="nav"/>-->
             </run>
         </groups>
         <classes>
             <class name="testCalculator" />
+            <methods>
+            <!--<include name="sum"/>-->
+                <!--<include name="diff"/>-->
+                <!--<include name="mul"/>-->
+                <!--<include name="div"/>-->
+                <!--<include name="mod"/>-->
+
+            </methods>
         </classes>
     </test>
 </suite>

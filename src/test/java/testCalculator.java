@@ -14,7 +14,7 @@ public class testCalculator {
     public void diffTest(){
         Assert.assertEquals(2,cal.diff(5,3),"failed");
     }
-    @Test(groups = {"calc"})
+    @Test(groups = {"calc","nav"})
     public void mulTest(){
         Assert.assertEquals(15,cal.mul(3,5),"failed");
     }
@@ -26,6 +26,11 @@ public class testCalculator {
     public void modTest(){
         Assert.assertEquals(1,cal.mod(11,5),"failed");
     }
+    @Test(groups = {"calc"})
+    public void abcTest(){
+        Assert.assertEquals(1,cal.mod(11,5),"failed");
+    }
+
 
 
 
