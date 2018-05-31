@@ -7,6 +7,6 @@ public class run {
         int SecondNumber = cal.getnumber();
         System.out.print("Enter expected Result:-");
         int Result = cal.getnumber();
-        System.out.println(cal.sum(6,7));
+        System.out.println(cal.sum(5,7));
     }
 }
