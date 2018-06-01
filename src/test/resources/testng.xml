@@ -4,6 +4,7 @@
         <groups>
             <define name="positive">
                 <include name="pos"/>
+
             </define>
             <define name="negetive">
                 <include name="neg"/>
@@ -13,10 +14,7 @@
                 <include name="neg"/>
 
             </define>
-            <run>
-                <include name="alltest"/>
 
-            </run>
 
         </groups>
         <classes>

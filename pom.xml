@@ -28,6 +28,13 @@
                         <suiteXmlFiles>
                             <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                         </suiteXmlFiles>
+                    <groups>${testng.groups}</groups>
+                    <properties>
+                        <property>
+                            <name>testnames</name>
+                            <value>${testNames}</value>
+                        </property>
+                    </properties>
                 </configuration>
             </plugin>
 
