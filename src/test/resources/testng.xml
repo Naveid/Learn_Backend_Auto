@@ -2,11 +2,22 @@
 <suite name="Sample Suite">
     <test name="testing">
         <groups>
-            <run>
+            <define name="positive">
                 <include name="pos"/>
-                <include name="all"/>
+            </define>
+            <define name="negetive">
                 <include name="neg"/>
+            </define>
+            <define name="alltest">
+                <include name="pos"/>
+                <include name="neg"/>
+
+            </define>
+            <run>
+                <include name="alltest"/>
+
             </run>
+
         </groups>
         <classes>
             <class name="testCalculator" />
