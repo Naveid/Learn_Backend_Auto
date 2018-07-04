@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Sample Suite">
+<suite name="Sample Suite" parallel="methods">
     <test name="testing">
         <groups>
-            <define name="positive">
-                <include name="pos"/>
+            <define name="smoke">
+                <include name="smoke"/>
 
             </define>
-            <define name="negetive">
-                <include name="neg"/>
+            <define name="sanity">
+                <include name="sanity"/>
+            </define>
+            <define name="regression">
+                <include name="reg"/>
             </define>
             <define name="alltest">
-                <include name="pos"/>
-                <include name="neg"/>
-
+                <include name="smoke"/>
+                <include name="sanity"/>
+                <include name="reg"/>
             </define>
 
 
         </groups>
         <classes>
             <class name="testCalculator" />
+            <class name="testClass1"/>
             <methods>
             <!--<include name="sum"/>-->
                 <!--<include name="diff"/>-->

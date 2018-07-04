@@ -27,7 +27,8 @@ public class Calculator {
         return 0;
         }
         finally {
-            System.out.println("Finally Executed");        }
+           // System.out.println("Finally Executed");
+            }
 
     }
 
@@ -39,7 +40,8 @@ public class Calculator {
             return 0;
         }
         finally {
-            System.out.println("Finally Executed");        }
+            //System.out.println("Finally Executed");
+            }
 
     }
     public int mul(int fno,int sno){
@@ -50,7 +52,8 @@ public class Calculator {
             return 0;
         }
         finally {
-            System.out.println("Finally Executed");        }
+           // System.out.println("Finally Executed");
+            }
 
     }
     public int div(int fno,int sno){
@@ -61,7 +64,8 @@ public class Calculator {
             return 0;
         }
         finally {
-            System.out.println("Finally Executed");        }
+           // System.out.println("Finally Executed");
+           }
 
     }
     public int mod(int fno,int sno){
@@ -72,7 +76,8 @@ public class Calculator {
             return 0;
         }
         finally {
-            System.out.println("Finally Executed");        }
+          //  System.out.println("Finally Executed");
+            }
 
     }
 
