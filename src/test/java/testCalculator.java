@@ -26,7 +26,9 @@ public class testCalculator {
     public void modTest(){
         Assert.assertEquals(1,cal.mod(11,5),"failed");
     }
-
+ public void createissue(){
+     System.out.println("hello");
+ }
 
 
 
