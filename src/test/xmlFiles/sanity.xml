@@ -13,6 +13,7 @@
         <classes>
             <class name="testCalculator" />
             <class name="testClass1"/>
+            <class name="testClass2"/>
             <methods>
                 <!--<include name="sum"/>-->
                 <!--<include name="diff"/>-->
