@@ -10,7 +10,7 @@ public class testCalculator {
     public void sumTest() throws InterruptedException {
         Thread.sleep(10000);
         Assert.assertEquals(8,cal.sum(3,5),"failed");
-        System.out.println("sanitytest0");
+        System.out.println("sanitytest sanity tc");
     }
     @Test(groups = {"smoke"})
     public void diffTest(){
@@ -19,19 +19,21 @@ public class testCalculator {
     @Test(groups = {"reg"})
     public void mulTest(){
         Assert.assertEquals(15,cal.mul(3,5),"failed");
+        System.out.println("regtest reg tc");
     }
     @Test(groups = {"sanity"})
     public void divTest(){
         Assert.assertEquals(2,cal.div(10,5),"failed");
-        System.out.println("sanitytest1");
+        System.out.println("sanitytest sanity tc");
     }
     @Test(groups = {"reg"})
     public void modTest(){
         Assert.assertEquals(1,cal.mod(11,5),"failed");
+        System.out.println("regtest reg tc");
     }
-    int i =0;
-    public void createissue(int i){
-        System.out.println(i);
-        System.out.println("hello");
-    }
+//    int i =0;
+//    public void createissue(int i){
+//        System.out.println(i);
+//        System.out.println("hello");
+//    }
 }
