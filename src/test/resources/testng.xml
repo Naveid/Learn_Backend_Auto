@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Sample Suite" parallel="methods">
+<suite name="Sample Suite" >   <!--parallel="methods"-->
     <test name="testing">
         <groups>
             <define name="smoke">
@@ -20,17 +20,30 @@
 
 
         </groups>
+        <!--<run>-->
+            <!--<include name="regression" />-->
+        <!--&lt;!&ndash;</run>&ndash;&gt;-->
+        <!--&lt;!&ndash;<run>&ndash;&gt;-->
+        <!--<include name="smoke" />'-->
+        <!--&lt;!&ndash;</run>&ndash;&gt;-->
+
+         <!--&lt;!&ndash;<run> &ndash;&gt;-->
+        <!--<include name="sanity" />-->
+         <!--</run>-->
+
         <classes>
             <class name="testCalculator" />
             <class name="testClass1"/>
-            <methods>
-            <!--<include name="sum"/>-->
-                <!--<include name="diff"/>-->
-                <!--<include name="mul"/>-->
-                <!--<include name="div"/>-->
-                <!--<include name="mod"/>-->
+            <class name="testClass2"/>
 
-           </methods>
+            <!--<methods>-->
+            <!--&lt;!&ndash;<include name="sum"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<include name="diff"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<include name="mul"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<include name="div"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<include name="mod"/>&ndash;&gt;-->
+
+           <!--</methods>-->
         </classes>
     </test>
 </suite>
