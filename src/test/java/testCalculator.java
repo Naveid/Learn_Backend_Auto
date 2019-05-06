@@ -2,7 +2,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.Scanner;
-
+@Test(groups={"def"})
 public class testCalculator {
     Calculator cal = new Calculator();
 
@@ -16,9 +16,10 @@ public class testCalculator {
     public void diffTest(){
         Assert.assertEquals(2,cal.diff(5,3),"failed");
     }
-    @Test(groups = {"reg"})
+    @Test(groups = {"reg"} ,dependsOnMethods = {"modTest"})
     public void mulTest(){
         Assert.assertEquals(15,cal.mul(3,5),"failed");
+        System.out.println("reg TC2");
     }
     @Test(groups = {"sanity"})
     public void divTest(){
@@ -28,6 +29,7 @@ public class testCalculator {
     @Test(groups = {"reg"})
     public void modTest(){
         Assert.assertEquals(1,cal.mod(11,5),"failed");
+        System.out.println("reg TC1");
     }
 
 

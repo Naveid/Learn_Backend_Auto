@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="sanitySuite" parallel="methods">
+<suite name="regressionSuite" parallel="methods">
     <test name="testing">
         <groups>
 
-            <define name="sanity">
-                <include name="sanity"/>
+            <define name="regression">
+                <include name="reg"/>
+                <include name="def"/>
             </define>
         </groups>
+
         <classes>
             <class name="testCalculator" />
             <!--<class name="testClass1"/>-->
@@ -21,4 +23,18 @@
             </methods>
         </classes>
     </test>
+
+    <!--<test name="t2">-->
+        <!--<groups>-->
+
+            <!--<define name="regression">-->
+                <!--<include name="reg"/>-->
+            <!--</define>-->
+        <!--</groups>-->
+        <!--<classes>-->
+            <!--<class name="testCalculator" />-->
+            <!--<class name="testClass2"/>-->
+
+        <!--</classes>-->
+    <!--</test>-->
 </suite>

@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Sample Suite" >   <!--parallel="methods"-->
+<suite name="allTestSuite" >   <!--parallel="methods"-->
     <test name="testing">
         <groups>
-            <define name="smoke">
-                <include name="smoke"/>
 
-            </define>
-            <define name="sanity">
-                <include name="sanity"/>
-            </define>
-            <define name="regression">
-                <include name="reg"/>
-            </define>
             <define name="alltest">
                 <include name="smoke"/>
                 <include name="sanity"/>
@@ -20,20 +11,30 @@
 
 
         </groups>
+        <!--<run>-->
+            <!--<include name="regression" />-->
+        <!--&lt;!&ndash;</run>&ndash;&gt;-->
+        <!--&lt;!&ndash;<run>&ndash;&gt;-->
+        <!--<include name="smoke" />'-->
+        <!--&lt;!&ndash;</run>&ndash;&gt;-->
+
+         <!--&lt;!&ndash;<run> &ndash;&gt;-->
+        <!--<include name="sanity" />-->
+         <!--</run>-->
 
         <classes>
             <class name="testCalculator" />
             <class name="testClass1"/>
             <class name="testClass2"/>
 
-            <!--<methods>-->
+            <methods>
             <!--<include name="sum"/>-->
                 <!--<include name="diff"/>-->
                 <!--<include name="mul"/>-->
                 <!--<include name="div"/>-->
                 <!--<include name="mod"/>-->
 
-           <!--</methods>-->
+           </methods>
         </classes>
     </test>
 </suite>
