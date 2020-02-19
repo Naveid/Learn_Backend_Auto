@@ -7,7 +7,6 @@ public class Calculator {
         System.out.println("numbr");
         Scanner abc = new Scanner(System.in);
 
-
         try{
            number = abc.nextInt();
 
