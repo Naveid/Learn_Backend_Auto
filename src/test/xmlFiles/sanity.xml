@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="sanitySuite" parallel="methods">
-    <test name="testing">
+<suite name="sanitySuite" >
+    <test name="testing" preserve-order="true">
         <groups>
-
             <define name="sanity">
                 <include name="sanity"/>
             </define>
         </groups>
         <classes>
-            <class name="testCalculator" />
-            <!--<class name="testClass1"/>-->
-            <!--<class name="testClass2"/>-->
+            <class name="testCalculator"/>
+            <class name="testClass1"/>
+            <class name="testClass2"/>   <!--mvn clean test -Dtestng.groups=sanity-->
             <methods>
                 <!--<include name="sum"/>-->
                 <!--<include name="diff"/>-->

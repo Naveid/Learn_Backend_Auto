@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="regressionSuite" parallel="methods">
+<suite name="regressionSuite" >
     <test name="testing">
         <groups>
 
             <define name="regression">
                 <include name="reg"/>
-                <include name="def"/>
+                <!--<include name="def"/>-->
             </define>
         </groups>
 
         <classes>
             <class name="testCalculator" />
-            <!--<class name="testClass1"/>-->
-            <!--<class name="testClass2"/>-->
+            <class name="testClass1"/>
+            <class name="testClass2"/>
             <methods>
                 <!--<include name="sum"/>-->
                 <!--<include name="diff"/>-->

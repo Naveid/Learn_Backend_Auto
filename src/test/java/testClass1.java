@@ -9,10 +9,11 @@ public class testClass1 {
         System.out.println("in class1 reg");
     }
     @Test(groups = {"sanity"})
-    public void diffTest(){
+    public void diffTest() throws InterruptedException {
         Assert.assertEquals(2,cal.diff(5,3),"failed");
+        Thread.sleep(100);
         System.out.println("in class1");
-        System.out.println("sanitytest2");
+        System.out.println("sanitytest from TestClass 1");
     }
     @Test(groups = {"reg"})
     public void mulTest(){

@@ -8,9 +8,9 @@ public class testCalculator {
 
     @Test(groups = {"sanity"})
     public void sumTest() throws InterruptedException {
-        //Thread.sleep(10000);
+        Thread.sleep(10000);
         Assert.assertEquals(8,cal.sum(3,5),"failed");
-        System.out.println("sanitytest0");
+        System.out.println("sanitytest check parallel execution");
     }
     @Test(groups = {"smoke"})
     public void diffTest(){
