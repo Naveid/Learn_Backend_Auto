@@ -17,7 +17,10 @@
                 <include name="sanity"/>
                 <include name="reg"/>
             </define>
+            <define name="uitest">
+                <include name="uitests"/>
 
+            </define>
 
         </groups>
 
@@ -25,7 +28,7 @@
             <class name="testCalculator" />
             <class name="testClass1"/>
             <class name="testClass2"/>
-
+            <class name="Sel"/>
             <!--<methods>-->
             <!--<include name="sum"/>-->
                 <!--<include name="diff"/>-->
