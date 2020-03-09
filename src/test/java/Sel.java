@@ -42,7 +42,7 @@ public class Sel {
         PageFactory.initElements(driver,this);
         driver.manage().window().setSize(new Dimension(1600,900));
         driver.get("https://www.staging1-hotels.com/");
-        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+       // driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
         WebDriverWait wait = new WebDriverWait(driver, 4);
         locationTextBox.sendKeys("lond");
         wait.until(ExpectedConditions.elementToBeClickable(priceDropDown));
