@@ -4,7 +4,6 @@
         <groups>
             <define name="smoke">
                 <include name="smoke"/>
-
             </define>
             <define name="sanity">
                 <include name="sanity"/>
