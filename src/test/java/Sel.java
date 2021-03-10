@@ -1,4 +1,3 @@
-import org.codehaus.groovy.runtime.powerassert.SourceText;
 import org.openqa.selenium.*;
 
 
@@ -63,7 +62,9 @@ public class Sel {
     }
     @BeforeTest
     public void beforeTest() {
+
         driver = new ChromeDriver();
+        this.driver=driver;
     }
     @AfterTest
     public void afterTest() {
